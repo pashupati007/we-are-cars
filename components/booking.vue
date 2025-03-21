@@ -14,34 +14,38 @@
               <v-text-field
                 v-model="customer.name"
                 label="First Name"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required]"
               ></v-text-field>
               <v-text-field
                 v-model="customer.surname"
                 label="Last Name"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required]"
               ></v-text-field>
               <v-text-field
                 v-model="customer.address"
                 label="Address"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required]"
               ></v-text-field>
               <v-text-field
                 v-model="customer.age"
                 label="Age"
                 type="number"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required]"
               ></v-text-field>
 
@@ -49,9 +53,10 @@
                 v-model="customer.license"
                 :items="['Yes', 'No']"
                 label="Valid Driving License?"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required]"
               ></v-select>
 
@@ -59,35 +64,39 @@
                 v-model="rental.carType"
                 :items="carTypes"
                 label="Select Car Type"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required]"
               ></v-select>
               <v-select
                 v-model="rental.fuelType"
                 :items="fuelTypes"
                 label="Select Fuel Type"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required]"
               ></v-select>
               <v-select
                 v-model="rental.optionalExtra"
                 :items="optionalExtras"
                 label="Select Optional Extras"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
               ></v-select>
               <v-text-field
                 v-model="rental.days"
                 label="Rental Days (1-28)"
                 type="number"
-                variant="underlined"
+                variant="outlined"
+                density="compact"
+                rounded="lg"
                 color="primary"
-                density="comfortable"
                 :rules="[rules.required, rules.rentalDays]"
               ></v-text-field>
             </v-form>
@@ -99,7 +108,7 @@
               block
               @click="submitBooking"
             >
-              Submit
+            Book a Car
             </v-btn>
           </v-card-actions>
         </v-card>

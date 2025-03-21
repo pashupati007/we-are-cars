@@ -25,7 +25,7 @@
             @click="$router.push('/booking')"
           >
             <v-card-text>
-              <h1>Booking</h1>
+              <h1>New Booking</h1>
             </v-card-text>
           </v-card>
         </v-col>

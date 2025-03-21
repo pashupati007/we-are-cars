@@ -9,7 +9,7 @@
 export default {
   setup() {
     definePageMeta({
-      layout: "main",
+      // layout: "main",
     });
   },
 };
